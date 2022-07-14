@@ -15,7 +15,9 @@ It also handles selecting multiple items in File Explorer and trying to play the
 
 ## File associations and the compiled executable
 
-Use my fork of the mpv-install script: https://github.com/SilverEzhik/mpv-install
+Use a fork of the mpv-install script by SilverEzhik: https://github.com/SilverEzhik/mpv-install
+
+A compiled version is also available in my [MPV Config](https://github.com/DrPleaseRespect/DrPleaseRespect-MPV-Config/tree/main/umpmv)
 
 ## Fix 15 item selection limit
 
