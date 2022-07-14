@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace umpvw
 {
@@ -127,8 +128,8 @@ namespace umpvw
                 pipeWriter.Flush();
             }
         }
-
-        static string mpvPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "mpv.exe");
+        static string configPath = ConfigurationManager.AppSettings.Get("mpvPath");
+        static string mpvPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configPath));
         //static string mpvPath = "mpv.exe";
 
         // launch mpv or get pipe 
